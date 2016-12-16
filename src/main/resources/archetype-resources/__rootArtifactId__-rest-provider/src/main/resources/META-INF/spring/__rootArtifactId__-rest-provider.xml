@@ -41,7 +41,7 @@
 
     <!-- account api v2 -->
     <dubbo:service interface="${package}.facade.AccountRestService" ref="accountRestService"
-                   protocol="rest" validation="true" timeout="2000" connections="100"/>
+                   protocol="rest" validation="true" timeout="2000"/>
     <bean id="accountRestService" class="${package}.facade.AccountRestServiceImpl">
         <property name="accountService" ref="accountService"/>
     </bean>
@@ -50,7 +50,7 @@
 
     <!-- message api v2 -->
     <dubbo:service interface="${package}.facade.MessageRestService" ref="messageRestService"
-                   protocol="rest" validation="true" timeout="2000" connections="100"/>
+                   protocol="rest" validation="true" timeout="2000"/>
 
     <bean id="messageRestService" class="${package}.facade.MessageRestServiceImpl">
         <property name="messageService" ref="messageService"/>

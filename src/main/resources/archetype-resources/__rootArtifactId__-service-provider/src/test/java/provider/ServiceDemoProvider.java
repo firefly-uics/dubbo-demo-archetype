@@ -18,7 +18,7 @@
  */
 package ${package}.provider;
 
-public class DemoProvider {
+public class ServiceDemoProvider {
 
     public static void main(String[] args) {
       System.setProperty("spring.profiles.default", "test");
